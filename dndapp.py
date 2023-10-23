@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for
+from waitress import serve
 
 app = Flask(__name__)
 
@@ -15,3 +16,6 @@ def about():
 @app.route('/auth/login')
 def login():
     return render_template('auth/login.html')
+
+if __name__ == "__main__":
+    serve(app, host="0.0.0.0", port=8000)
