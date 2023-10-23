@@ -5,7 +5,10 @@
 {% block content %}
     <h1>Log-in:</h1>
     <form action="submit">
-        <input type="text">
-        <input type="password" name="" id="">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="password">Constraseña:</label>
+        <input type="password" name="password" id="password">
+        <button>Log-in</button>
     </form>
 {% endblock %}
