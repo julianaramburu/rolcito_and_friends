@@ -1,3 +1,6 @@
+html * {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /* Define the main Navigation block */
 .myNav {
@@ -28,4 +31,19 @@
 /* This is optional, however if you want to display the active link differently apply a background to it */
 .myNav li a.active {
     background-color: #3786E1;
+}
+
+/* INDEX */
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2.125rem;
+}
+
+p { 
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
 }
