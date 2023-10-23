@@ -1,9 +1,17 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 # Rutas
 
 @app.route('/')
-def hello():
-    render_template('index.html')
+def index():
+    return render_template('index.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/auth/login')
+def login():
+    return render_template('auth/login.html')
